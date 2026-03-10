@@ -65,6 +65,7 @@ Icon=/opt/vesta/img/logo@2x.png
 Terminal=false
 Type=Application
 Categories=Science;Education;Chemistry;Physics;
+StartupWMClass=Vesta-gui
 ```
 
 ```bash

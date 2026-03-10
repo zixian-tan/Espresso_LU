@@ -117,6 +117,7 @@ Icon=/opt/xcrysden/images/xcrysden.png
 Terminal=false
 Type=Application
 Categories=Science;Education;Chemistry;Physics;
+StartupWMClass=Xcinit.tcl
 ```
 
 ```bash
