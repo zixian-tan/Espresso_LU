@@ -9,7 +9,7 @@ A crystal editing software from CCDC
 
 ## 1️⃣ Download and install
 
-Go to the offical website: <https://www.ccdc.cam.ac.uk/solutions/software/free-mercury/>
+Go to the offical website: [https://www.ccdc.cam.ac.uk/solutions/software/free-mercury/](https://www.ccdc.cam.ac.uk/solutions/software/free-mercury/)
 
 Sign up and download the installer.
 
