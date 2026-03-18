@@ -1,9 +1,9 @@
 ---
 sidebar_position: 2
 ---
-# XCrySDen Installation and Compatibility Guide
+# XCrySDen
 
-> Ubuntu 24.04-25.10 and fedora 43 workstation
+> XCrySDen Installation and Compatibility Guide for Ubuntu 24.04-25.10 and fedora 43 workstation
 
 XCrySDen is a crystal and molecular structure visualization tool based on Tcl/Tk.  
 This guide is for version `1.6.2` (latest stable).

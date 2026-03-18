@@ -1,9 +1,9 @@
 ---
 sidebar_position: 1
 ---
-# VESTA Installation Guide
+# VESTA
 
-> For Ubuntu 24.04-25.10 and fedora 43 workstation
+> VESTA Installation Guide for Ubuntu 24.04-25.10 and fedora 43 workstation
 
 VESTA is a visualization program for crystal structures and electronic densities.  
 These steps describe installation on Ubuntu 25.01 using the official precompiled Linux package (`VESTA-gtk3-x86_64.tar.bz2`).
