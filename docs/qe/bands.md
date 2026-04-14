@@ -24,7 +24,7 @@ The band calculation is performed **after an SCF run**, using the self-consisten
 
 ## 2. Standard Band Structure Input Template
 
-```pw
+```pw.x
 &control
     calculation = 'bands',          ! non-self-consistent band calculation
     prefix      = 'MY_SYS',         ! must match the SCF prefix
@@ -101,9 +101,9 @@ K_POINTS crystal_b
 - Each line in the `K_POINTS` block corresponds to a **path segment** between high-symmetry points.
 - After the run, process the eigenvalues using:
 
-```bands.x
-bands.x < bands.in > bands.out
-plotband.x < plotband.in > plotband.out
+```bash
+pw.x < bands.in > bands.out
+bands.x < pp.band.in > pp.band.out
 ```
 
 ### Band Plot Workflow
@@ -111,11 +111,12 @@ plotband.x < plotband.in > plotband.out
 1. Run `pw.x` for the bands input above.
 2. Run `bands.x`:
 
-    ```band
+    ```band.x
     &BANDS
         prefix = 'MY_SYS',
         outdir = './tmp',
         filband = 'MY_SYS.bands.dat'
+        ! lsym    = .true.
     /
     ```
 

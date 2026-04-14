@@ -51,3 +51,10 @@ BURAI/
 Your installation places all ``.jar`` files inside ``BURAI/bin``, which requires a custom classpath (addressed in Section 4).
 
 ## 2️⃣ Install JavaFX
+
+OpenJDK on Ubuntu does not bundle JavaFX. Install it separately:
+
+```bash
+sudo apt update
+sudo apt install openjfx
+```
