@@ -45,8 +45,14 @@ sudo mkdir -p /opt/togl2
 sudo cp -a Togl2.0-8.4-Linux/* /opt/togl2/
 cd /opt/togl2/lib/Togl2.0
 sudo ln -sf libTogl2.0.so libTogl.so.2
-echo "/opt/togl2/lib/Togl2.0" | sudo tee /etc/ld.so.conf.d/togl2.conf 
+sudo tee /etc/ld.so.conf.d/togl2.conf 
 sudo ldconfig
+```
+
+Then install runtime library
+
+```bash
+sudo dnf install tk8 tcl8 libgfortran
 ```
 
 ---
