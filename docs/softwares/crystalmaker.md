@@ -1647,14 +1647,10 @@ Also record:
 
 ## 23. References
 
-- WineHQ Fedora 44 repository file:  
-  <https://dl.winehq.org/wine-builds/fedora/44/winehq.repo>
-- Microsoft .NET 8 downloads:  
-  <https://dotnet.microsoft.com/en-us/download/dotnet/8.0>
-- Winetricks project:  
-  <https://github.com/Winetricks/winetricks>
-- Desktop Entry Specification:  
-  <https://specifications.freedesktop.org/desktop-entry-spec/latest/>
+- [WineHQ Fedora 44 repository file](https://dl.winehq.org/wine-builds/fedora/44/winehq.repo)
+- [Microsoft .NET 8 downloads](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
+- [Winetricks project](https://github.com/Winetricks/winetricks)
+- [Desktop Entry Specification](https://specifications.freedesktop.org/desktop-entry-spec/latest/)
 
 ## Final known-good configuration
 
