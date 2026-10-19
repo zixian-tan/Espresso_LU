@@ -147,7 +147,7 @@ BURAI is an old JavaFX application and does not work correctly with Fedora 44 de
 
 ---
 
-# 1. Extract BURAI
+## 1. Extract BURAI
 
 Download the Linux version of BURAI and extract it.
 
@@ -180,7 +180,7 @@ The final structure should look similar to:
 
 ---
 
-# 2. Install JavaFX
+## 2. Install JavaFX
 
 Fedora 44 already includes OpenJDK 25 by default, but BURAI is incompatible with it.
 
@@ -209,13 +209,13 @@ Expected output:
 
 ---
 
-# 3. Install Java 17 (Temurin)
+## 3. Install Java 17 (Temurin)
 
 Fedora 44 repositories no longer provide OpenJDK 17 directly.
 
 Install Eclipse Temurin 17 instead.
 
-## Add Adoptium repository
+### Add Adoptium repository
 
 ```bash
 sudo rpm --import https://packages.adoptium.net/artifactory/api/gpg/key/public
@@ -232,7 +232,7 @@ gpgkey=https://packages.adoptium.net/artifactory/api/gpg/key/public
 EOF
 ```
 
-## Install Temurin 17
+### Install Temurin 17
 
 ```bash
 sudo dnf install temurin-17-jdk
@@ -252,26 +252,26 @@ openjdk version "17.x.x"
 
 ---
 
-# 4. Install JavaFX 17 SDK
+## 4. Install JavaFX 17 SDK
 
 Fedora's system JavaFX is compiled for Java 25+, which is incompatible with Java 17.
 
 Therefore a matching JavaFX 17 SDK must be installed manually.
 
-## Download JavaFX 17
+### Download JavaFX 17
 
 ```bash
 cd ~/Downloads
 wget https://download2.gluonhq.com/openjfx/17.0.16/openjfx-17.0.16_linux-x64_bin-sdk.zip
 ```
 
-## Extract
+### Extract
 
 ```bash
 unzip openjfx-17.0.16_linux-x64_bin-sdk.zip
 ```
 
-## Move to system location
+### Move to system location
 
 ```bash
 sudo mv javafx-sdk-17.0.16 /opt/
@@ -285,7 +285,7 @@ Final location:
 
 ---
 
-# 5. Configure BURAI Launcher Script
+## 5. Configure BURAI Launcher Script
 
 Edit launcher:
 
@@ -317,7 +317,7 @@ sudo chmod +x /usr/share/applications/BURAI/bin/burai.sh
 
 ---
 
-# 6. Launch BURAI
+## 6. Launch BURAI
 
 Run:
 
@@ -329,7 +329,7 @@ BURAI should now open correctly.
 
 ---
 
-# 7. Create Desktop Launcher
+## 7. Create Desktop Launcher
 
 Create desktop entry:
 
@@ -368,7 +368,7 @@ If the launcher does not immediately appear in GNOME, log out and log back in.
 
 ---
 
-# 8. Why This Is Necessary
+## 8. Why This Is Necessary
 
 BURAI is an older JavaFX application originally designed for Java 8/11-era environments.
 
